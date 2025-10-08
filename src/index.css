@@ -9,6 +9,14 @@
   --background-color: #ff5252;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f5f0f0;
+  color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 8px !important;
   height: 8px !important;
@@ -21,17 +29,17 @@
   background-color: #ffffff;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-optical-sizing: auto;
-  background-color: #f5f0f0;
-  color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-}
-
 .container {
   width: 95%;
   margin: auto;
+}
+
+.btn-org {
+  background: #ff5252 !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  padding: 7px 20px;
 }
 
 .link:hover {
@@ -113,8 +121,8 @@ nav ul button:hover {
 
 .homeCatSlider .swiper-button-prev:hover,
 .homeCatSlider .swiper-button-next:hover,
-.mySwiper .swiper-button-prev:hover,
-.mySwiper .swiper-button-next:hover {
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
   background: #ff5252;
   color: white !important;
 }
@@ -135,4 +143,62 @@ nav ul button:hover {
   padding: 15px;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+footer form input::placeholder {
+  font-size: 14px;
+}
+
+.css-1umw9bq-MuiSvgIcon-root {
+  fill: #ff5252 !important;
+}
+
+.MuiFormControlLabel-label {
+  font-size: 13px !important;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff5252 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info {
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info h4 {
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info h2 {
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info h3 {
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info .btn_ {
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+.homeSliderV2 .info h4 {
+  transition-duration: 1.2s;
+}
+
+.homeSliderV2 .info h2 {
+  transition-duration: 1.5s;
+}
+
+.homeSliderV2 .info h3 {
+  transition-duration: 1.8s;
+}
+
+.homeSliderV2 .info .btn_ {
+  transition-duration: 2.1s;
 }

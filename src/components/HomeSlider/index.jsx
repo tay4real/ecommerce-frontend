@@ -13,6 +13,7 @@ const HomeSlider = () => {
       <div className='container'>
         <Swiper
           spaceBetween={10}
+          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
