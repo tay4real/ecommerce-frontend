@@ -14,9 +14,9 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import BlogItem from '../../components/BlogItem';
-import Footer from '../../components/Footer';
 import HomeBannerV2 from '../../components/HomeSliderV2';
 import BannerBoxV2 from '../../components/BannerBoxV2';
+import AdsBannerSliderV2 from '../../components/AdsBannerSliderV2';
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
@@ -103,12 +103,12 @@ const Home = () => {
             <p className='font-bold text-[25px]'>- Only $200*</p>
           </div>
 
-          <AdsBannerSlider items={4} />
+          <AdsBannerSliderV2 items={3} />
         </div>
       </section>
       <section className='p-5 pt-0  bg-white'>
         <div className='container'>
-          <h2 className='text-[20px] font-[600]'>Popular Products</h2>
+          <h2 className='text-[20px] font-[600]'>Latest Products</h2>
           <ProductsSlider items={6} />
           <AdsBannerSlider items={3} />
         </div>
@@ -147,7 +147,6 @@ const Home = () => {
           </Swiper>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

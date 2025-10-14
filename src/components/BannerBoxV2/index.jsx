@@ -13,7 +13,7 @@ const BannerBoxV2 = (props) => {
 
       <div
         className={`info absolute p-5 top-0 ${
-          props.info === 'left' ? 'left-0' : 'right-0 pl-14'
+          props.info === 'left' ? 'left-0' : 'right-0 pl-25'
         } w-[70%] h-[100%] z-50 flex justify-center items-center flex-col gap-2`}>
         <h2 className='text-[18px] font-[600]'>{props.desc}</h2>
 

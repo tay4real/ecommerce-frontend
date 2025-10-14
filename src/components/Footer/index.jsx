@@ -14,6 +14,12 @@ import { AiOutlineYoutube } from 'react-icons/ai';
 import { FaPinterestP } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 
+import carte_bleue from '../../assets/carte_bleue.png';
+import visa from '../../assets/visa.png';
+import master_card from '../../assets/master_card.png';
+import american_express from '../../assets/american_express.png';
+import paypal from '../../assets/paypal.png';
+
 const Footer = () => {
   return (
     <>
@@ -229,11 +235,11 @@ const Footer = () => {
           </p>
 
           <div className='flex items-center'>
-            <img src='./carte_bleue.png' alt='image' />
-            <img src='./visa.png' alt='image' />
-            <img src='./master_card.png' alt='image' />
-            <img src='./american_express.png' alt='image' />
-            <img src='./paypal.png' alt='image' />
+            <img src={carte_bleue} alt='image' />
+            <img src={visa} alt='image' />
+            <img src={master_card} alt='image' />
+            <img src={american_express} alt='image' />
+            <img src={paypal} alt='image' />
           </div>
         </div>
       </div>

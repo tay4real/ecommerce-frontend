@@ -13,8 +13,33 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   background-color: #f5f0f0;
-  color: rgba(0, 0, 0, 0.9);
+  color: #3e3e3e;
   overflow-x: hidden;
+}
+
+p {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +54,14 @@ body {
   background-color: #ffffff;
 }
 
+.reviewScroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.reviewScroll::-webkit-scrollbar-thumb {
+  background-color: #ccc !important;
+}
+
 .container {
   width: 95%;
   margin: auto;
@@ -40,6 +73,10 @@ body {
   font-weight: 500 !important;
   font-size: 16px !important;
   padding: 7px 20px;
+}
+
+.btn-org:hover {
+  background-color: #171717 !important;
 }
 
 .link:hover {
@@ -153,6 +190,14 @@ footer form input::placeholder {
   fill: #ff5252 !important;
 }
 
+.css-120dh41-MuiSvgIcon-root {
+  fill: rgba(0, 0, 0, 0.5) !important;
+}
+
+.MuiCheckbox-root {
+  padding: 6px !important;
+}
+
 .MuiFormControlLabel-label {
   font-size: 13px !important;
   color: rgba(0, 0, 0, 0.8);
@@ -201,4 +246,60 @@ footer form input::placeholder {
 
 .homeSliderV2 .info .btn_ {
   transition-duration: 2.1s;
+}
+
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
+.range-slider {
+  height: 3px !important;
+}
+
+.range-slider .range-slider__thumb {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.range-slider .range-slider__thumb,
+.range-slider .range-slider__range {
+  background-color: #ff5252 !important;
+}
+
+.itemViewActions button.active svg {
+  color: #ff5252 !important;
+}
+
+.css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #ff5252 !important;
+  color: #ffffff !important;
+}
+
+.zoomProductSliderThumbs {
+  height: 70px !important;
+  overflow: hidden !important;
+}
+
+.zoomProductSliderThumbs .swiper-wrapper {
+  padding-top: 20px;
+}
+
+.zoomProductSliderThumbs .swiper-slide {
+  height: auto !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-prev {
+  top: 0px !important;
+  height: 20px !important;
+  border-radius: 0px !important;
+  width: 100% !important;
+  margin-left: -50% !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next {
+  bottom: 0px !important;
+  height: 20px !important;
+  border-radius: 0px !important;
+  width: 100% !important;
+  margin-left: -50% !important;
 }

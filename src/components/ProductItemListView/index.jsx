@@ -6,11 +6,12 @@ import Button from '@mui/material/Button';
 import { FaRegHeart } from 'react-icons/fa';
 import { IoGitCompareOutline } from 'react-icons/io5';
 import { MdZoomOutMap } from 'react-icons/md';
+import { MdOutlineShoppingCart } from 'react-icons/md';
 
 const ProductItem = () => {
   return (
-    <div className='productItem shadow-lg rounded-md overflow-hidden border-1 border-[rgba(0,0,0,0.1)]'>
-      <div className='group imgWrapper w-[100%] h-[220px] overflow-hidden rounded-md relative'>
+    <div className='productItem shadow-lg rounded-md overflow-hidden border-1 border-[rgba(0,0,0,0.1)] flex items-center'>
+      <div className='group imgWrapper w-[25%] h-[220px] overflow-hidden rounded-md relative'>
         <Link to='/'>
           <div className='img'>
             <img
@@ -45,17 +46,23 @@ const ProductItem = () => {
         </div>
       </div>
 
-      <div className='info p-3 py-5  bg-[#f1f1f1]'>
-        <h6 className='text-[13px] !font-[400]'>
+      <div className='info p-3 py-5  px-8  w-[75%]'>
+        <h6 className='text-[15px] !font-[400]'>
           <Link to={'/'} className='link transition-all'>
             Soylent Green
           </Link>
         </h6>
-        <h3 className='text-[13px] title mt-1 !font-[500] mb-1 text-[#000]'>
+        <h3 className='text-[18px] title mt-3 !font-[500] mb-3 text-[#000]'>
           <Link to={'/'} className='link transition-all'>
             Siril Georgette Pink Color Saree with Blouse piece
           </Link>
         </h3>
+
+        <p className='text-[14px] mb-3'>
+          We demonstrate how to create responsive product grid layouts using CSS
+          Grid and Flexbox. These layouts adapt to different screen sizes,
+          ensuring a seamless user experience across devices.
+        </p>
 
         <Rating name='size-small' defaultValue={2} size='small' readOnly />
 
@@ -66,6 +73,12 @@ const ProductItem = () => {
           <span className='price text-primary text-[15px] font-[600]'>
             $58.00
           </span>
+        </div>
+
+        <div className='mt-3'>
+          <Button className='btn-org flex gap-2'>
+            <MdOutlineShoppingCart className='text-[20px]' /> Add to Cart
+          </Button>
         </div>
       </div>
     </div>
