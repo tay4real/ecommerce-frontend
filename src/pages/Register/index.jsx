@@ -6,7 +6,7 @@ import { IoMdEyeOff } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 
-const Login = () => {
+const Register = () => {
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   return (
@@ -14,10 +14,19 @@ const Login = () => {
       <div className='container'>
         <div className='card shadow-md w-[400px] m-auto rounded-md bg-white p-5 px-10'>
           <h3 className='text-center text-[18px] text-black'>
-            Login to your account
+            Register with a new account
           </h3>
 
           <form className='w-full mt-5'>
+            <div className='form-group w-full mb-5'>
+              <TextField
+                type='text'
+                id='name'
+                label='Full Name'
+                variant='outlined'
+                className='w-full'
+              />
+            </div>
             <div className='form-group w-full mb-5'>
               <TextField
                 type='email'
@@ -31,7 +40,7 @@ const Login = () => {
               <TextField
                 type={isShowPassword ? 'text' : 'password'}
                 id='password'
-                label='Password'
+                label='Password *'
                 variant='outlined'
                 className='w-full'
               />
@@ -46,20 +55,16 @@ const Login = () => {
               </Button>
             </div>
 
-            <Link className='link cursor-pointer text-[14px] font-[500]'>
-              Forgot Password?
-            </Link>
-
             <div className='flex items-center w-full mt-3 mb-3'>
-              <Button className='btn-org btn-lg w-full'>Login</Button>
+              <Button className='btn-org btn-lg w-full'>Register</Button>
             </div>
 
             <p className='text-center'>
-              Not Registered?{' '}
+              Already have an account?{' '}
               <Link
                 className='link text-[14px] font-[600] text-primary'
-                to='/register'>
-                Sign Up
+                to='/login'>
+                Login
               </Link>
             </p>
 
@@ -77,4 +82,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
