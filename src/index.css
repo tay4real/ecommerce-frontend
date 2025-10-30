@@ -79,6 +79,11 @@ input::-webkit-inner-spin-button {
   background-color: #171717 !important;
 }
 
+.btn-lg {
+  font-size: 18px !important;
+  padding: 10px 20px;
+}
+
 .link:hover {
   color: #ff5252;
 }
@@ -302,4 +307,8 @@ footer form input::placeholder {
   border-radius: 0px !important;
   width: 100% !important;
   margin-left: -50% !important;
+}
+
+.productDetailsModal .MuiDialogContent-root {
+  padding: 0 !important;
 }
